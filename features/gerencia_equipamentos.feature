@@ -17,4 +17,5 @@ Feature: Gerenciar equipamentos do "Lab1"
         And o campo "Descrição" está com o valor "Impressora lazer"
         When Clico o botão "Inserir"
         Then Então o equipamento aparece na listagem de equipamentos contidos no espaço
-        And uma caixa de seleção é ativada na primeira coluna a frente das informações que foram inseridas referente ao equip
+        And uma caixa de seleção é ativada na primeira coluna a frente das informações
+        And foi isso ai
