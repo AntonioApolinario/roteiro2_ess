@@ -14,3 +14,4 @@ Feature: rotinas adminitrativas do "Lab1"
         And vejo o botão "Excluir"
         When clico no botão "Excluir"
         Then sou direcionado para um outra tela que me perguntará se desejo realmente excluir o "Lab1"
+        And dá a confirmação da ação
