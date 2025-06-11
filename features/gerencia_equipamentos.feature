@@ -19,3 +19,10 @@ Feature: Gerenciar equipamentos do "Lab1"
         Then Então o equipamento aparece na listagem de equipamentos contidos no espaço
         And uma caixa de seleção é ativada na primeira coluna a frente das informações
         And foi isso ai
+
+    Scenario: clicando no botão "Excluir" sem selecionar nenhum equipamento
+        Given eu estou na página de gerenciamento de equipamentos
+        And sem selecionar nenhuma caixa de seleção ao lado de um equipamento da lista
+        When eu tento clicar no botão "Excluir"
+        Then o botão de excluir se encontra desabilitado
+        And uma mensagem próxima ao ponteiro do mouse é exibida "Você deve selecionar um item da lista"
