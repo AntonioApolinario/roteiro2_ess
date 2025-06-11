@@ -35,3 +35,4 @@ Feature: Gerenciar equipamentos do "Lab1"
         Then uma tela de confirmação é apresentada com as opções de confirmar ou cancelar
         And se confirmada a solicitação de reserva sai da lista
         And se cancelada o foco apenas volta para a página que esta a lista de solicitações
+        And essa é a solicitação de mudança que querem que eu adicione para o roteiro 2 na branch fix
