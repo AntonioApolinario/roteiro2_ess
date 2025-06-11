@@ -18,4 +18,4 @@ Feature: Gerenciar equipamentos do "Lab1"
         When Clico o botão "Inserir"
         Then Então o equipamento aparece na listagem de equipamentos contidos no espaço
         And uma caixa de seleção é ativada na primeira coluna a frente das informações
-        And foi isso ai
+        Then A coisa explode de vez
