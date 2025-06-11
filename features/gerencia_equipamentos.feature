@@ -19,3 +19,19 @@ Feature: Gerenciar equipamentos do "Lab1"
         Then Então o equipamento aparece na listagem de equipamentos contidos no espaço
         And uma caixa de seleção é ativada na primeira coluna a frente das informações
         Then A coisa explode de vez
+        And foi isso ai
+
+    Scenario: clicando no botão "Excluir" sem selecionar nenhum equipamento
+        Given eu estou na página de gerenciamento de equipamentos
+        And sem selecionar nenhuma caixa de seleção ao lado de um equipamento da lista
+        When eu tento clicar no botão "Excluir"
+        Then o botão de excluir se encontra desabilitado
+        And uma mensagem próxima ao ponteiro do mouse é exibida "Você deve selecionar um item da lista"
+
+    Scenario: Administrador constata que há reservas que devem ser rejeitadas
+        Given estou na página que exibe a agenda do "Lab1"
+        And que há uma reserva que não deverá ser efetuada
+        When clico no botão "Rejeitar"
+        Then uma tela de confirmação é apresentada com as opções de confirmar ou cancelar
+        And se confirmada a solicitação de reserva sai da lista
+        And se cancelada o foco apenas volta para a página que esta a lista de solicitações
